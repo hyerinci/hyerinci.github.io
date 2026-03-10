@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyerin Hwang - PORTFOLIO</title>
+    <!-- Tailwind CSS (No build required) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* 프리텐다드 폰트 적용 */
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+            font-weight: 100;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+            font-weight: 200;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+            font-weight: 300;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+            font-weight: 800;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+            font-weight: 900;
+            font-display: swap;
+        }
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+        .nav-btn.active {
+            color: white;
+            border-bottom-color: white;
+        }
+    </style>
+</head>
+<body class="bg-black text-white selection:bg-white selection:text-black min-h-screen">
+
+    <!-- Background Grid Pattern -->
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 border-b border-white/20 transition-all backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-black tracking-tighter cursor-pointer uppercase" onclick="scrollToId('home')">
+          Hyerin Hwang
+        </div>
+        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+          <button data-target="projects" onclick="scrollToId('projects')" class="nav-btn hover:text-white transition-colors border-b-2 text-neutral-500 border-transparent pb-1">Projects</button>
+          <button data-target="about" onclick="scrollToId('about')" class="nav-btn hover:text-white transition-colors border-b-2 text-neutral-500 border-transparent pb-1">About</button>
+          <button data-target="skills" onclick="scrollToId('skills')" class="nav-btn hover:text-white transition-colors border-b-2 text-neutral-500 border-transparent pb-1">Skills</button>
+          <button data-target="soundsphere" onclick="scrollToId('soundsphere')" class="nav-btn hover:text-white transition-colors border-b-2 text-neutral-500 border-transparent pb-1">SoundSphere</button>
+        </div>
+        <button onclick="scrollToId('contact')" class="px-4 py-2 border border-white text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+          Contact
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-16 px-6 md:px-12 max-w-7xl mx-auto z-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/20 pb-8">
+        <div class="w-full">
+          <div class="text-neutral-400 font-bold tracking-widest uppercase text-sm mb-6 space-y-1">
+            <p>CAU 중앙대학교 가상융합대학</p>
+            <p>2026</p>
+            <p>Hungary MOME<br/>SoundSphere<br/>Project</p>
+          </div>
+          <h1 class="text-[14vw] md:text-[11vw] font-black tracking-tighter uppercase leading-none break-all sm:break-normal w-full">
+            PORTFOLIO.
+          </h1>
+        </div>
+        <div class="text-neutral-400 font-bold uppercase tracking-widest text-sm space-y-1 md:text-right flex flex-col items-start md:items-end flex-shrink-0">
+          <p class="text-white hover:underline cursor-pointer">hwhl02@naver.com</p>
+          <p class="mb-8">Hyerin Hwang</p>
+          <button onclick="scrollToId('projects')" class="mt-6 animate-bounce p-3 border border-white/20 hover:bg-white hover:text-black transition-colors text-white">
+            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 md:px-12 relative z-10 bg-black">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-16">Projects</h2>
+
+        <div class="space-y-32">
+          
+          <!-- 1. Olympic Story -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border border-white/20 p-6 md:p-12">
+            <div class="lg:col-span-4 space-y-6">
+              <div class="space-y-2">
+                <span class="text-neutral-500 font-bold uppercase tracking-widest text-xs">Exhibition Media</span>
+                <h3 class="text-4xl font-black tracking-tight uppercase">올림픽 스토리 <br/><span class="text-2xl text-neutral-400 font-light">Olympic Story</span></h3>
+              </div>
+              <div class="h-px bg-white/20 w-full"></div>
+              <div class="space-y-4 text-neutral-300 font-light text-sm leading-relaxed">
+                <p>Media content production for exhibition spaces under the Korean Sport & Olympic Committee. Content produced included Large-scale screen visuals, Entrance LED display media, and Olympic highlight content.</p>
+                <p>At the Korea National Sports Talent Development Institute exhibition, I produced storytelling media about Olympic heroes. The project involved the entire pipeline from concept to final production. AI-generated music using Suno was also integrated.</p>
+              </div>
+              <div class="flex gap-2 flex-wrap pt-4">
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Premiere Pro</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">After Effects</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Exhibition</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">AI Audio</span>
+              </div>
+            </div>
+            <div class="lg:col-span-8 space-y-8">
+              <div>
+                <div class="relative pb-[56.25%] h-0 overflow-hidden border border-white/20 bg-neutral-900 mb-3">
+                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/rrzVMfsNFA0?rel=0" title="Olympic Story 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://youtu.be/rrzVMfsNFA0" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-white transition-colors">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> 유튜브에서 영상 보기 (오류 시 클릭)
+                </a>
+              </div>
+              <div>
+                <div class="relative pb-[56.25%] h-0 overflow-hidden border border-white/20 bg-neutral-900 mb-3">
+                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/5noBgf_amZg?rel=0" title="Olympic Story 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://youtu.be/5noBgf_amZg" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-white transition-colors">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> 유튜브에서 영상 보기 (오류 시 클릭)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Demon Slayer VR -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border border-white/20 p-6 md:p-12">
+            <div class="lg:col-span-8 order-2 lg:order-1">
+               <div>
+                <div class="relative pb-[56.25%] h-0 overflow-hidden border border-white/20 bg-neutral-900 mb-3">
+                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/2k1eKYoSe8A?rel=0" title="Demon Slayer VR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://youtu.be/2k1eKYoSe8A" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-white transition-colors">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> 유튜브에서 영상 보기 (오류 시 클릭)
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-4 order-1 lg:order-2 space-y-6">
+              <div class="space-y-2">
+                <span class="text-neutral-500 font-bold uppercase tracking-widest text-xs">Unreal Engine VR</span>
+                <h3 class="text-4xl font-black tracking-tight uppercase">Demon Slayer <br/><span class="text-2xl text-neutral-400 font-light">VR Experience</span></h3>
+              </div>
+              <div class="h-px bg-white/20 w-full"></div>
+              <div class="space-y-4 text-neutral-300 font-light text-sm leading-relaxed">
+                <p>VR Experience Inspired by Demon Slayer (귀멸의 칼날).</p>
+                <p>Users explore the Infinity Castle environment in VR from the perspective of a messenger crow. Created using Unreal Engine with Blueprint, Level Sequencer, and PCG Graph.</p>
+              </div>
+              <div class="flex gap-2 flex-wrap pt-4">
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Unreal Engine</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">VR</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Blueprint</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">PCG Graph</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Kick Back Cinematic -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border border-white/20 p-6 md:p-12">
+            <div class="lg:col-span-4 space-y-6">
+              <div class="space-y-2">
+                <span class="text-neutral-500 font-bold uppercase tracking-widest text-xs">Unreal Engine Project</span>
+                <h3 class="text-4xl font-black tracking-tight uppercase">米津玄師 <br/> KICK BACK <br/><span class="text-2xl text-neutral-400 font-light">Cinematic</span></h3>
+              </div>
+              <div class="h-px bg-white/20 w-full"></div>
+              <div class="space-y-4 text-neutral-300 font-light text-sm leading-relaxed">
+                <p>A cinematic video inspired by Kick Back by Kenshi Yonezu and the opening sequence of Chainsaw Man.</p>
+                <p>Created utilizing Unreal Engine cinematic rendering combined with After Effects motion graphics to achieve a highly stylized visual aesthetic.</p>
+              </div>
+              <div class="flex gap-2 flex-wrap pt-4">
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Unreal Engine</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">After Effects</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Motion Graphics</span>
+              </div>
+            </div>
+            <div class="lg:col-span-8">
+              <div>
+                <div class="relative pb-[56.25%] h-0 overflow-hidden border border-white/20 bg-neutral-900 mb-3">
+                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/tQVbKvfRrMc?rel=0" title="Kick Back Cinematic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://youtu.be/tQVbKvfRrMc" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-white transition-colors">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> 유튜브에서 영상 보기 (오류 시 클릭)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Tamburins CAMO -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border border-white/20 p-6 md:p-12">
+            <div class="lg:col-span-8 order-2 lg:order-1">
+               <div>
+                <div class="relative pb-[56.25%] h-0 overflow-hidden border border-white/20 bg-neutral-900 mb-3">
+                  <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/tQVbKvfRrMc?rel=0" title="Tamburins CAMO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <a href="https://youtu.be/tQVbKvfRrMc" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-white transition-colors">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> 유튜브에서 영상 보기 (오류 시 클릭)
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-4 order-1 lg:order-2 space-y-6">
+              <div class="space-y-2">
+                <span class="text-neutral-500 font-bold uppercase tracking-widest text-xs">Virtual Production</span>
+                <h3 class="text-4xl font-black tracking-tight uppercase">Tamburins <br/><span class="text-2xl text-neutral-400 font-light">CAMO AD</span></h3>
+              </div>
+              <div class="h-px bg-white/20 w-full"></div>
+              <div class="space-y-4 text-neutral-300 font-light text-sm leading-relaxed">
+                <p>A commercial project created using virtual production techniques for the brand Tamburins.</p>
+                <p>Unreal Engine was used to design the virtual environment before shooting. The final video combines AI generated visuals, Unreal Engine cinematic renders, and Live-action footage to create a cohesive commercial narrative.</p>
+              </div>
+              <div class="flex gap-2 flex-wrap pt-4">
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Unreal Engine</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Virtual Production</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Cinematic Rendering</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">AI Visuals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. 어필 (Eopil) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border border-white/20 p-6 md:p-12">
+            <div class="lg:col-span-4 space-y-6">
+              <div class="space-y-2">
+                <span class="text-neutral-500 font-bold uppercase tracking-widest text-xs">Projection Mapping</span>
+                <h3 class="text-4xl font-black tracking-tight uppercase">어필 <br/><span class="text-2xl text-neutral-400 font-light">Eopil</span></h3>
+              </div>
+              <div class="h-px bg-white/20 w-full"></div>
+              <div class="space-y-4 text-neutral-300 font-light text-sm leading-relaxed">
+                <p>AI-based typography media art project. This project trains AI on royal calligraphy from the Joseon Dynasty and expands those writing styles into modern Korean typography.</p>
+                <p>The generated typeface was presented as a projection mapping installation, visualizing the transformation of historical calligraphy into contemporary text. The artwork was projected onto a curved surface, requiring distortion-adjusted visuals to match the structure. The animation is synchronized with music to create a rhythmic visual experience.</p>
+              </div>
+              <div class="flex gap-2 flex-wrap pt-4">
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Projection Mapping</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">AI Typography</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Media Art</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Installation</span>
+              </div>
+            </div>
+            <div class="lg:col-span-8">
+               <div class="relative pb-[56.25%] h-0 overflow-hidden border border-white/20 bg-neutral-900 group">
+                <img 
+                  src="스크린샷 2026-03-09 232436.jpg" 
+                  alt="Eopil Media Art Projection Mapping" 
+                  class="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Codex88 -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border border-white/20 p-6 md:p-12">
+            <div class="lg:col-span-8 order-2 lg:order-1">
+               <div class="relative pb-[56.25%] h-0 overflow-hidden border border-white/20 bg-neutral-900 group">
+                <img 
+                  src="KakaoTalk_20251029_001232052" 
+                  alt="CODEX88 Media Art Spatial Installation" 
+                  class="absolute top-0 left-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+            <div class="lg:col-span-4 order-1 lg:order-2 space-y-6">
+              <div class="space-y-2">
+                <span class="text-neutral-500 font-bold uppercase tracking-widest text-xs">Spatial Installation</span>
+                <h3 class="text-4xl font-black tracking-tight uppercase">CODEX88</h3>
+              </div>
+              <div class="h-px bg-white/20 w-full"></div>
+              <div class="space-y-4 text-neutral-300 font-light text-sm leading-relaxed">
+                <p>Typography-based media art project inspired by the handwriting of Leonardo da Vinci.</p>
+                <p>By analyzing the structural characteristics of Da Vinci's writing, a Korean typeface was created. The animation visualizes the process of a codex being written. To enhance the experience, the projector was installed under the table so viewers could observe without blocking the projection.</p>
+              </div>
+              <div class="flex gap-2 flex-wrap pt-4">
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Spatial Installation</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Typography</span>
+                <span class="px-3 py-1 border border-white/30 text-xs font-bold uppercase tracking-wider text-neutral-300">Media Art</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 md:px-12 border-t border-white/20 relative z-10 bg-black">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">About Me</h2>
+        <div class="text-neutral-400 font-bold tracking-widest uppercase text-sm md:text-base mb-16 space-y-1">
+          <p class="text-white text-xl md:text-2xl">Hyerin Hwang</p>
+          <p>Motion Graphics Designer / Media Artist</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 border-t border-white/20 pt-16">
+          <div class="space-y-8">
+            <div class="space-y-2">
+              <p class="text-neutral-500 font-bold tracking-widest uppercase text-sm">Major</p>
+              <p class="text-2xl font-bold uppercase tracking-tight">Art & Technology</p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-neutral-500 font-bold tracking-widest uppercase text-sm">Interdisciplinary Major</p>
+              <p class="text-2xl font-bold uppercase tracking-tight">Game Interactive Media</p>
+            </div>
+          </div>
+          
+          <div class="space-y-6 text-neutral-300 leading-relaxed text-lg font-light">
+            <p>I am a media designer who creates visual experiences that make people <span class="text-white font-bold">stop and stay.</span> When we visit exhibitions, there are always certain works that people stand in front of longer than others. I believe those works leave emotional impressions whether it is awe, comfort, empathy, or inspiration.</p>
+            <p>Through contents, I aim to create content that people do not simply watch, but <span class="text-white font-bold">experience within a space</span>. I am particularly interested in immersive media and music-driven visual storytelling, combining technology and artistic direction to build engaging visual environments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="py-24 px-6 md:px-12 border-t border-white/20 relative z-10 bg-black">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-16">Skills & Tools</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Tools -->
+          <div class="space-y-12">
+            <div class="border border-white/20 p-8">
+              <h3 class="text-xl font-bold uppercase tracking-widest mb-8 border-b border-white/20 pb-4">Software</h3>
+              <ul class="space-y-6 font-light">
+                <li><strong class="font-bold text-white uppercase text-lg">Ae After Effects</strong> <br/><span class="text-neutral-400">Motion graphics, Animation, Compositing</span></li>
+                <li><strong class="font-bold text-white uppercase text-lg">Pr Premiere Pro</strong> <br/><span class="text-neutral-400">Video editing, Color correction, Storytelling</span></li>
+                <li><strong class="font-bold text-white uppercase text-lg">Ps Ai Photoshop & Illustrator</strong> <br/><span class="text-neutral-400">Graphic design, Visual assets, Layout design</span></li>
+                <li><strong class="font-bold text-white uppercase text-lg">Unreal Engine</strong> <br/><span class="text-neutral-400">Real-time Rendering, Level Design, Cinematic sequences</span></li>
+                <li><strong class="font-bold text-white uppercase text-lg">Unity</strong> <br/><span class="text-neutral-400">Game UI, Character Design</span></li>
+              </ul>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div class="border border-white/20 p-8">
+                <h3 class="text-xl font-bold uppercase tracking-widest mb-6 border-b border-white/20 pb-4">Media Tools</h3>
+                <ul class="space-y-4 font-light text-neutral-300">
+                  <li><strong class="text-white uppercase block mb-1">TouchDesigner</strong> Real-time generative visual systems</li>
+                  <li><strong class="text-white uppercase block mb-1">MadMapper</strong> Projection mapping & spatial media</li>
+                </ul>
+              </div>
+              <div class="border border-white/20 p-8">
+                <h3 class="text-xl font-bold uppercase tracking-widest mb-6 border-b border-white/20 pb-4">AI Tools</h3>
+                <p class="font-light text-neutral-400 text-sm leading-relaxed">
+                  AI tools are occasionally used during the production process to help complete projects independently and expand visual possibilities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Awards & Experience -->
+          <div class="space-y-12">
+             <div class="border border-white/20 p-8">
+              <h3 class="text-xl font-bold uppercase tracking-widest mb-8 border-b border-white/20 pb-4 flex justify-between">
+                <span>Awards</span> <span class="text-neutral-500 font-mono">03</span>
+              </h3>
+              <ul class="space-y-6">
+                <li class="grid grid-cols-[80px_1fr] gap-4 items-start">
+                  <span class="text-neutral-500 font-mono">2025</span>
+                  <div>
+                    <p class="font-bold text-white uppercase tracking-tight">Capstone Design Competition</p>
+                    <p class="text-neutral-400 text-sm mt-1">Grand Prize</p>
+                  </div>
+                </li>
+                <li class="grid grid-cols-[80px_1fr] gap-4 items-start">
+                  <span class="text-neutral-500 font-mono">2025</span>
+                  <div>
+                    <p class="font-bold text-white uppercase tracking-tight">Hanium ICT Mentoring Competition</p>
+                    <p class="text-neutral-400 text-sm mt-1">Award</p>
+                  </div>
+                </li>
+                <li class="grid grid-cols-[80px_1fr] gap-4 items-start">
+                  <span class="text-neutral-500 font-mono">2025</span>
+                  <div>
+                    <p class="font-bold text-white uppercase tracking-tight">Seoul Metro AI Art Competition</p>
+                    <p class="text-neutral-400 text-sm mt-1">Award</p>
+                  </div>
+                </li>
+                <li class="grid grid-cols-[80px_1fr] gap-4 items-start">
+                  <span class="text-neutral-500 font-mono">2024</span>
+                  <div>
+                    <p class="font-bold text-white uppercase tracking-tight">TikTok AR Filter Makerthon</p>
+                    <p class="text-neutral-400 text-sm mt-1">2nd Place</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border border-white/20 p-8">
+              <h3 class="text-xl font-bold uppercase tracking-widest mb-8 border-b border-white/20 pb-4">Experience</h3>
+              <ul class="space-y-8">
+                <li>
+                  <p class="font-bold text-white uppercase tracking-tight text-lg">Daum Design Lab</p>
+                  <p class="text-neutral-400 text-sm mt-2 font-light">Exhibition media content production for cultural spaces</p>
+                </li>
+                <li>
+                  <p class="font-bold text-white uppercase tracking-tight text-lg">DLG Law Firm</p>
+                  <p class="text-neutral-400 text-sm mt-2 font-light">Video editing and marketing content production</p>
+                </li>
+                <li>
+                  <p class="font-bold text-white uppercase tracking-tight text-lg mb-2">Korea Creative Content Agency (KOCCA)</p>
+                  <div class="bg-white/5 p-4 text-sm text-neutral-300 font-light border-l-2 border-white">
+                    <p>New Content Academy</p>
+                    <p>- Immersive Space Major</p>
+                    <p>- Virtual Production Minor</p>
+                  </div>
+                </li>
+                <li>
+                  <p class="font-bold text-white uppercase tracking-tight text-lg">Chung-Ang University</p>
+                  <p class="text-neutral-400 text-sm mt-2 font-light">Graduation Exhibition Design Team Director</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SoundSphere Proposal Section -->
+    <section id="soundsphere" class="py-32 px-6 md:px-12 border-t border-white/20 relative z-10 bg-black">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+        <div class="lg:col-span-5">
+          <p class="text-neutral-500 font-bold tracking-widest uppercase text-sm mb-4">2026 Hungary MOME</p>
+          <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">Sound<br/>Sphere<br/>Project</h2>
+        </div>
+        
+        <div class="lg:col-span-7 border border-white/20 p-8 md:p-12 space-y-12">
+          <div>
+            <h3 class="text-xl font-bold uppercase tracking-widest mb-6 border-b border-white/20 pb-4">Content Proposal</h3>
+            <div class="space-y-4 font-light text-neutral-300 leading-relaxed text-lg">
+              <p>For the SoundSphere dome project, I would reinterpret the concept of creation inspired by <em>The Creation of Adam</em> by Michelangelo in a contemporary context.</p>
+              <p>Instead of depicting the traditional story of creation, the project explores creation in the age of artificial intelligence. Artificial intelligence, created by humans, now generates new images through technologies such as diffusion models.</p>
+              <p>This dome content would visualize a new form of creation emerging between humans and AI, transforming the iconic imagery into an immersive spatial experience.</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold uppercase tracking-widest mb-6 border-b border-white/20 pb-4">Vision</h3>
+            <div class="space-y-4 font-light text-neutral-300 leading-relaxed text-lg">
+              <p>I have experience in motion graphics, spatial media installation, Unreal Engine, and exhibition media production.</p>
+              <p>Through projection mapping projects using curved surfaces, I have developed an understanding of how visuals interact with physical space. These experiences allow me to design visual content that considers both the screen and the environment in which it exists.</p>
+              <p class="text-white font-normal mt-6 pt-6 border-t border-white/10">For this project, I look forward to collaborating with international students, exchanging ideas, and exploring new creative approaches together. I believe this experience will help me grow further as a media artist while contributing my skills and enthusiasm to the team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-24 px-6 md:px-12 border-t border-white/20 bg-black text-center relative z-10">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-[12vw] md:text-8xl font-black uppercase tracking-tighter leading-none mb-12">Thank<br/>You.</h2>
+        
+        <a href="mailto:hwhl02@naver.com" class="inline-block border border-white px-8 py-4 text-xl font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors mb-16">
+          hwhl02@naver.com
+        </a>
+
+        <div class="text-neutral-500 font-bold uppercase tracking-widest text-sm space-y-2">
+          <p class="text-white text-lg">Hyerin Hwang</p>
+          <p>Motion Graphics Designer / Media Artist</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 자바스크립트 로직 -->
+    <script>
+      // 아이콘 생성
+      lucide.createIcons();
+
+      // 스크롤 이동 기능
+      function scrollToId(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // 스크롤 시 상단 메뉴바 하이라이트 기능
+      document.addEventListener('scroll', () => {
+        const sections = ['home', 'projects', 'about', 'skills', 'soundsphere'];
+        const scrollPosition = window.scrollY + 200;
+        let currentSection = 'home';
+
+        sections.forEach(id => {
+          const el = document.getElementById(id);
+          if (el && el.offsetTop <= scrollPosition && (el.offsetTop + el.offsetHeight) > scrollPosition) {
+            currentSection = id;
+          }
+        });
+
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+          if (btn.dataset.target === currentSection) {
+            btn.classList.add('text-white', 'border-white');
+            btn.classList.remove('text-neutral-500', 'border-transparent');
+          } else {
+            btn.classList.remove('text-white', 'border-white');
+            btn.classList.add('text-neutral-500', 'border-transparent');
+          }
+        });
+      });
+
+      // 초기 로드 시 한 번 실행
+      window.dispatchEvent(new Event('scroll'));
+    </script>
+</body>
+</html>
